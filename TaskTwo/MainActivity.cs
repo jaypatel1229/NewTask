@@ -30,6 +30,7 @@ namespace TaskTwo
             like = new likefragment();
             location = new locationfragment();
             profilefragment = new profilefragment();
+            SupportFragmentManager.BeginTransaction().Replace(Resource.Id.frameLayout, home).Commit();
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
