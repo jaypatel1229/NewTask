@@ -1,4 +1,27 @@
 <resources>
     <string name="app_name">TaskTwo</string>
     <string name="action_settings">Settings</string>
+
+
+	<string name="dashboard">Dashboard</string>
+	<string name="january">January</string>
+	
+	<string name="dailyspendtarget">Daily spend Target: $16.67</string>
+	<string name="dailyspends">DAILY SPENDS</string>
+	<string name="seeAll">See All</string>
+	
+	<string name="netBanking">Net Banking</string>
+	<string name="price">$ 365.89</string>
+	<string name="today">Today</string>
+
+
+	<string name="hotel">Food and Drink</string>
+	<string name="hotelPrice">$165.99</string>
+	<string name="hotelDate">29 Jan 2019</string>
+
+	<string name="clothes">Clothes</string>
+	<string name="clothesPrice">$65.09</string>
+	<string name="clothestime">15Jan 2019</string>
+
+	<string name="wishlist">WISHLIST</string>
 </resources>

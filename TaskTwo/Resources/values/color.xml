@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimary">#2c3e50</color>
+	<color name="colorPrimaryDark">#1B3147</color>
+	<color name="colorAccent">#3498db</color>
+
+
+	<color name="skyBlue">#2c62ff</color>
+	<color name="parryRed">#ff5e5b</color>
+	<color name="gold">#fbb41a</color>
+	<color name="green">#2bc999</color>
+
+	<color name="lighGreen">#2fc997</color>
+	<color name="navyblue">#618aff</color>
+
+	<color name="white">#ffffff</color>
+</resources>
