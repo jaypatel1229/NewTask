@@ -7,34 +7,35 @@
     android:layout_height="match_parent"
 >
  <FrameLayout
-        android:id="@+id/frameLayout"
+     android:id="@+id/frameLayout"
      android:layout_width="match_parent"
-     android:layout_height="670dp"
+     android:layout_height="wrap_content"
        
  />
 
 
  <com.google.android.material.bottomappbar.BottomAppBar
        android:id="@+id/bottomAppBar"
-       android:layout_width="match_parent"
-       android:layout_height="84dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
        app:layout_constraintBottom_toBottomOf="parent"       
  >
      <com.google.android.material.bottomnavigation.BottomNavigationView           
             android:id="@+id/bottomUserid"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             app:menu="@menu/menubar"
             app:itemIconTint="@drawable/selecter"
             android:scrollIndicators="bottom"
+            
      />        
  </com.google.android.material.bottomappbar.BottomAppBar>
     <com.google.android.material.floatingactionbutton.FloatingActionButton
        app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
-       android:layout_width="56dp"
-       android:layout_height="56dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
        android:background="@color/skyBlue"
        android:id="@+id/floatingActionButtonAdd"
        android:src="@drawable/ic_add"

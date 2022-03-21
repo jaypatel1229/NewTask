@@ -5,6 +5,7 @@
 
 	<string name="dashboard">Dashboard</string>
 	<string name="january">January</string>
+	<string name="myprice">$ 500</string>
 	
 	<string name="dailyspendtarget">Daily spend Target: $16.67</string>
 	<string name="dailyspends">DAILY SPENDS</string>

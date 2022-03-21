@@ -1,12 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout 
+<ScrollView 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-      
+    android:paddingBottom="85dp"  
 >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    >
     <TextView
         android:id="@+id/textViewDashboard"
         android:layout_width="wrap_content"
@@ -22,8 +26,8 @@
         android:layout_marginLeft="10dp"
     />
     <androidx.cardview.widget.CardView
-        android:layout_width="45dp"
-        android:layout_height="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:cardCornerRadius="10dp"
@@ -52,6 +56,7 @@
         app:cardCornerRadius="15dp"
         android:layout_marginTop="70dp"
     >
+        
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -63,7 +68,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="$ 500"
+            android:text="@string/myprice"
             android:textSize="30sp"
             android:textStyle="bold"
             android:layout_marginLeft="20dp"
@@ -91,15 +96,14 @@
 
         <ProgressBar
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-            android:layout_width="262dp"
+            android:layout_width="match_parent"
             android:layout_height="5dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="80dp"
+            android:layout_marginRight="80dp"
             android:indeterminate="false"
             android:progress="70"
-            android:max="100"
-            android:scrollbarSize="100dp"
-            android:visibility="visible"
+            android:max="100"            
             android:background="@color/navyblue"
             android:progressDrawable="@drawable/progress"
             android:id="@+id/progressBar2" 
@@ -198,14 +202,14 @@
         android:layout_marginTop="32dp"
     />
         <androidx.cardview.widget.CardView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:backgroundTint="@color/gold"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:cardCornerRadius="10dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="84dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/gold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:cardCornerRadius="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="84dp"
         >
             <ImageView
                 android:layout_width="40dp"
@@ -247,14 +251,14 @@
             android:layout_marginTop="90dp"
         />
         <androidx.cardview.widget.CardView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:backgroundTint="@color/green"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:cardCornerRadius="10dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="150dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/green"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:cardCornerRadius="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="150dp"
         >
             <ImageView
                 android:layout_width="40dp"
@@ -297,6 +301,7 @@
         />
     </androidx.cardview.widget.CardView>
     <TextView
+            android:id="@+id/textViewOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/wishlist"
@@ -321,10 +326,9 @@
 
     <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginBottom="20dp" 
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewOne" 
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginTop="20dp"
         android:scrollbars="none"
     >
         <LinearLayout
@@ -552,4 +556,5 @@
             </androidx.cardview.widget.CardView>
         </LinearLayout>
     </HorizontalScrollView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
