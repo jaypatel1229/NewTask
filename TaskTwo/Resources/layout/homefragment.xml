@@ -438,7 +438,8 @@
                 android:layout_marginHorizontal="10dp"
                 android:backgroundTint="@color/parryRed"
                 android:layout_width="70dp"
-                android:layout_height="70dp">
+                android:layout_height="70dp"
+            >
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="70dp"
                     android:padding="5dp"
