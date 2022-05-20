@@ -3,7 +3,10 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using AndroidX.AppCompat.App;
+
 using Google.Android.Material.BottomNavigation;
+using System;
+
 using static Google.Android.Material.BottomNavigation.BottomNavigationView;
 
 namespace TaskTwo
@@ -16,6 +19,9 @@ namespace TaskTwo
         likefragment like;
         locationfragment location;
         profilefragment profilefragment;
+
+
+        
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -31,14 +37,9 @@ namespace TaskTwo
             location = new locationfragment();
             profilefragment = new profilefragment();
             SupportFragmentManager.BeginTransaction().Replace(Resource.Id.frameLayout, home).Commit();
+                                
         }
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
-        {
-            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-
-            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-        }
-
+    
         public bool OnNavigationItemSelected(IMenuItem menuItem)
         {
             switch (menuItem.ItemId)
